@@ -1,0 +1,36 @@
+.imageModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  img {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    -webkit-text-stroke: 1.5px black;
+    font-size: 50px;
+    color: #fff;
+    transition: all 0.3s;
+    z-index: 3;
+
+    &:hover {
+      color: red;
+      background-color: #cccccc;
+    }
+  }
+}
